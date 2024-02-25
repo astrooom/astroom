@@ -1,29 +1,31 @@
-import { FaDocker, FaPython, FaJsSquare, FaReact } from 'react-icons/fa'; // Import icons
-import { SiNextdotjs } from "react-icons/si";
-import { SiFlask } from "react-icons/si";
-import { SiVercel } from "react-icons/si";
+import { FaDocker, FaPython, FaJsSquare, FaReact, FaHtml5, FaPhp } from 'react-icons/fa'; // Import icons
+import { SiVercel, SiMariadb, SiPterodactyl, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn } from "react-icons/si";
 
 export function KnowledgeList() {
   const skills = {
     "Programming Languages": [
+      { id: 'html', name: 'HTML', icon: <FaHtml5 /> },
       { id: 'js', name: 'JavaScript', icon: <FaJsSquare /> },
       { id: 'python', name: 'Python', icon: <FaPython /> },
-      // { id: 'react', name: 'React', icon: <FaReact /> },
+      { id: 'php', name: 'PHP', icon: <FaPhp /> },
     ],
     "Frameworks": [
       { id: 'react', name: 'React', icon: <FaReact /> },
       { id: "nextjs", name: "Next.js", icon: <SiNextdotjs /> },
       { id: 'flask', name: 'Flask', icon: <SiFlask /> },
-      // Add more frameworks or other sections as needed
+      { id: 'laravel', name: 'Laravel', icon: <SiLaravel /> },
     ],
     "Tools": [
       { id: 'docker', name: 'Docker', icon: <FaDocker /> },
-      { id: "pterodactyl", name: "Pterodactyl" }
-      // Add more tools or other sections as needed
+      { id: "pterodactyl", name: "Pterodactyl", icon: <SiPterodactyl /> },
+      { id: 'mariadb', name: 'MariaDB', icon: <SiMariadb /> },
+      { id: 'redis', name: 'Redis', icon: <SiRedis /> },
+      { id: 'traefik', name: 'Traefik', icon: <SiTraefikproxy /> },
+      { id: 'gunicorn', name: 'Gunicorn', icon: <SiGunicorn /> },
     ],
     "Cloud": [
+      { id: 'github', name: 'GitHub', icon: <SiGithub /> },
       { id: "vercel", name: "Vercel", icon: <SiVercel /> },
-      // Add more cloud providers or other sections as needed
     ],
   };
 
