@@ -31,8 +31,8 @@ export function KnowledgeList() {
     <div>
       {Object.entries(skills).map(([sectionTitle, skillsList]) => (
         <div key={sectionTitle} className="mb-8">
-          <h2 className="text-lg font-semibold mb-4">{sectionTitle}</h2>
-          <ul className="list-none p-0 flex flex-col gap-y-2.5">
+          <h2 className="text-lg font-semibold mb-4 text-neutral-50">{sectionTitle}</h2>
+          <ul className="list-none p-0 flex flex-col gap-y-2.5 text-neutral-100">
             {skillsList.map((skill) => (
               <li key={skill.id} className="flex">
                 {skill.icon && <span className="mr-2 flex items-center">{skill.icon}</span>}
