@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="text-left divide-y divide-neutral-400 flex flex-col gap-y-6">
 
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <div className="w-6/12">
           <h1 className="text-2xl font-semibold mb-4 text-neutral-50">About Me</h1>
           <p className="text-lg mb-4 text-neutral-100">
@@ -20,16 +20,14 @@ export default function About() {
           </p>
         </div>
 
-
-        <div>
+        <div className="mx-auto">
           <NextImage
             src={"/about_me.webp"}
             alt={`about me`}
-            width={400}
-            height={400}
-            quality={60}
-
-          // className="w-24 h-24 p-1 border border-neutral-acc/blend ring-1 ring-black/blend_strong rounded-sm"
+            width={380}
+            height={380}
+            quality={40}
+            className="rounded-full"
           />
         </div>
       </div>

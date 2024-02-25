@@ -13,7 +13,7 @@ export default function HeaderNav() {
   const navigation = useMemo(() => getNavigation("main"), []);
 
   return (
-    <Disclosure as="nav" className="bg-dark shadow">
+    <Disclosure id="globalNav" as="nav" className="bg-dark shadow">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ export default function HeaderNav() {
                     <a
                       key={`${index}_${item.href}`}
                       href={item.href}
-                      className={cn(pathname === item.href ? "inline-flex items-center border-b-2 border-blue-500 px-1 pt-1 text-sm font-medium text-neutral-200" :
+                      className={cn(pathname === item.href ? "inline-flex items-center border-b-2 border-white-500 px-1 pt-1 text-sm font-medium text-neutral-200" :
                         "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-neutral-200 hover:border-gray-300 hover:text-neutral-50"
                       )}
                     >

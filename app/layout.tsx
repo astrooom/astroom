@@ -20,11 +20,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
 
-        <header>
+        <header className="absolute top-0 inset-x-0">
           <HeaderNav />
         </header>
 
-        <main className="mt-16">
+        <main>
           {children}
         </main>
 
