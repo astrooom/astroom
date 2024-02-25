@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
 
-        <header className="absolute top-0 inset-x-0">
+        <header className="absolute top-0 inset-x-0 z-20">
           <HeaderNav />
         </header>
 
