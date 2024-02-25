@@ -9,7 +9,7 @@ export default function Home() {
           background="transparent"
           minSize={0.6}
           maxSize={1.4}
-          particleDensity={100}
+          particleDensity={30}
           className="w-full h-full"
           particleColor="#FFFFFF"
           speed={0.3}
