@@ -12,7 +12,7 @@ export function Timeline() {
         <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August 2022 - Today</time>
         <h3 className="text-lg font-semibold text-neutral-200 dark:text-white">Lead Developer @ UltraServers</h3>
         <p className="mb-4 text-base font-normal text-neutral-400 dark:text-gray-400">
-          I'm currently working as a lead developer at UltraServers, a game hosting company that offers high-performance servers for a variety of games. My role involves developing new features, finding the best solution to problems, maintaining the existing codebase, as well as collaborating with the team to ensure the best possible user experience.
+          I&apos;m currently working as a lead developer at UltraServers, a game hosting company that offers high-performance servers for a variety of games. My role involves developing new features, finding the best solution to problems, maintaining the existing codebase, as well as collaborating with the team to ensure the best possible user experience.
         </p>
       </li>
 
@@ -22,7 +22,7 @@ export function Timeline() {
         <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">October 2022 - Today</time>
         <h3 className="text-lg font-semibold text-neutral-200 dark:text-white">Started AB Buddleja</h3>
         <p className="mb-4 text-base font-normal text-neutral-400 dark:text-gray-400">
-          I started my own company for self-employment, AB Buddleja, which focuses on providing development & system administration services to clients. I'm responsible for managing the company, finding new clients, and delivering high-quality services to meet their needs.
+          I started my own company for self-employment, AB Buddleja, which focuses on providing development & system administration services to clients. I&apos;m responsible for managing the company, finding new clients, and delivering high-quality services to meet their needs.
         </p>
       </li>
 
