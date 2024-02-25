@@ -9,7 +9,6 @@ import { useMemo } from 'react';
 
 export default function HeaderNav() {
   const pathname = usePathname();
-
   const navigation = useMemo(() => getNavigation("main"), []);
 
   return (

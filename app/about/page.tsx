@@ -32,7 +32,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="py-4 flex justify-between gap-x-4">
+      <div className="mt-8 py-12 flex justify-between gap-x-4">
         <div className="w-6/12">
           <KnowledgeList />
         </div>

@@ -5,7 +5,7 @@ export default function AboutLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="mt-20 max-w-6xl mx-auto">
+    <div className="mt-24 max-w-[76rem] mx-auto">
       {children}
     </div>
   );
