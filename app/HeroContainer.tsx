@@ -1,9 +1,10 @@
 "use client";
 
+import { cn } from "@/utils/cn";
 import { TypewriterEffectSmooth, Boxes } from "@components/ui";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-export function HeroContainer() {
+export function HeroContainer({ className }: Readonly<{ className?: string; }>) {
 
   const helloWords = [
     {
@@ -22,7 +23,7 @@ export function HeroContainer() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className={cn("flex flex-col items-center justify-center h-screen", className)}>
       {/* <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" /> */}
 
       {/* <Boxes /> */}

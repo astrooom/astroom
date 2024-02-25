@@ -12,6 +12,7 @@ export default function Home() {
           particleDensity={100}
           className="w-full h-full"
           particleColor="#FFFFFF"
+          speed={0.5}
         />
       </div>
       <HeroContainer />
