@@ -23,7 +23,7 @@ export default function RootLayout({
           <HeaderNav />
         </header>
 
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <main className="mt-16">
           {children}
         </main>
 

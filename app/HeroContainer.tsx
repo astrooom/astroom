@@ -1,4 +1,5 @@
 "use client";
+
 import { TypewriterEffectSmooth, Boxes } from "@components/ui";
 
 export function HeroContainer() {
@@ -14,7 +15,7 @@ export function HeroContainer() {
     },
     {
       text: "astroom.",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     }
   ];
 
@@ -28,7 +29,7 @@ export function HeroContainer() {
       {/* <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base my-2">
         Developer | Designer | Creator | System Engineer
       </p> */}
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 z-20">
+      {/* <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 z-20">
 
         <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
           Join now
@@ -36,7 +37,7 @@ export function HeroContainer() {
         <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
           Signup
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

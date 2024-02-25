@@ -1,13 +1,17 @@
 "use client";
 
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { getNavigation } from '@/utils/navigation';
+import { cn } from '@/utils/cn';
+import { usePathname } from 'next/navigation';
+import { useMemo } from 'react';
 
 export default function HeaderNav() {
+  const pathname = usePathname();
+
+  const navigation = useMemo(() => getNavigation("main"), []);
+
   return (
     <Disclosure as="nav" className="bg-dark shadow">
       {({ open }) => (
@@ -26,7 +30,7 @@ export default function HeaderNav() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   astroom
                   {/* <img
@@ -36,31 +40,17 @@ export default function HeaderNav() {
                   /> */}
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-neutral-200"
-                  >
-                    Dashboard
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-neutral-200 hover:border-gray-300 hover:text-neutral-50"
-                  >
-                    Team
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-neutral-200 hover:border-gray-300 hover:text-neutral-50"
-                  >
-                    Projects
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-neutral-200 hover:border-gray-300 hover:text-neutral-50"
-                  >
-                    Calendar
-                  </a>
+                  {navigation.map((item, index) => (
+                    <a
+                      key={`${index}_${item.href}`}
+                      href={item.href}
+                      className={cn(pathname === item.href ? "inline-flex items-center border-b-2 border-blue-500 px-1 pt-1 text-sm font-medium text-neutral-200" :
+                        "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-neutral-200 hover:border-gray-300 hover:text-neutral-50"
+                      )}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
                 </div>
               </div>
 
@@ -70,38 +60,24 @@ export default function HeaderNav() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pb-4 pt-2">
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
-              >
-                Dashboard
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Team
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Projects
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Calendar
-              </Disclosure.Button>
-            </div>
-          </Disclosure.Panel>
+
+              {navigation.map((item, index) => (
+                <Disclosure.Button
+                  key={`${index}_${item.href}`}
+                  as="a"
+                  href={item.href}
+                  className={cn(pathname === item.href ? "block border-l-4 border-blue-500 py-2 pl-3 pr-4 text-base font-medium text-blue-500" :
+                    "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                  )}
+                >
+                  {item.name}
+                </Disclosure.Button>
+
+              ))}
+            </div >
+          </Disclosure.Panel >
         </>
       )}
-    </Disclosure>
+    </Disclosure >
   )
 }
