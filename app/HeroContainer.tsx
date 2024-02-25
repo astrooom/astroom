@@ -1,6 +1,7 @@
 "use client";
 
 import { TypewriterEffectSmooth, Boxes } from "@components/ui";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export function HeroContainer() {
 
@@ -30,13 +31,11 @@ export function HeroContainer() {
         Developer | Creator | System Administrator.
       </p>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 my-4">
-        <a className="flex items-center justify-center w-40 h-10 rounded-xl bg-white border border-transparent text-black text-sm hover:bg-neutral-200" href="/about">
-          About
+        <a className="px-6 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" href="/about">
+          About Me <FaArrowRightLong className="inline-block" />
         </a>
-        {/* <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
-          Signup
-        </button> */}
       </div>
-    </div>
+    </div >
+
   );
 }
