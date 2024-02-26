@@ -3,6 +3,19 @@ import { Timeline } from "./Timeline";
 import NextImage from "next/image";
 
 export default function About() {
+
+  // Function to get my age. I was born on the 30th of November, 2000.
+  const getAge = () => {
+    const birthDate = new Date("2000-11-30");
+    const currentDate = new Date();
+    const age = currentDate.getFullYear() - birthDate.getFullYear();
+    const month = currentDate.getMonth() - birthDate.getMonth();
+    if (month < 0 || (month === 0 && currentDate.getDate() < birthDate.getDate())) {
+      return age - 1;
+    }
+    return age;
+  };
+
   return (
     <div className="text-left divide-y divide-neutral-400 flex flex-col gap-y-6">
 
@@ -10,7 +23,7 @@ export default function About() {
         <div className="w-6/12">
           <h1 className="text-2xl font-semibold mb-4 text-neutral-50">About Me</h1>
           <p className="text-lg mb-4 text-neutral-100">
-            Hello! I&apos;m a passionate developer and system administrator based in the vibrant city of Gothenburg, Sweden. With a keen interest in technology and innovation, I&apos;ve dedicated myself to exploring the depths of software development and system architecture.
+            Hello! I&apos;m a {getAge()} year old passionate developer and system administrator from Gothenburg, Sweden. With a keen interest in technology and innovation, I&apos;ve dedicated myself to exploring the depths of software development and system architecture.
           </p>
           <p className="text-lg mb-4 text-neutral-100">
             My journey in the tech industry has been a blend of curiosity, learning, and overcoming challenges. From crafting dynamic web applications to optimizing robust systems, I&apos;ve navigated through various facets of technology to enhance my skills and contribute meaningful solutions.
@@ -37,7 +50,7 @@ export default function About() {
           <KnowledgeList />
         </div>
 
-        <div className="w-6/12 mt-4">
+        <div className="w-6/12 mt-1">
           <Timeline />
         </div>
 
