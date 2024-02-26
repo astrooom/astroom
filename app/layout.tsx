@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Source_Code_Pro } from "next/font/google";
-
+import localFont from 'next/font/local'
 import "./globals.css";
 import HeaderNav from "@/components/ui/header-nav";
 
-const font = Source_Code_Pro({ subsets: ["latin"] });
+const font = localFont({
+  src: [{ path: '../public/fonts/source-code-pro.woff2', style: "normal" }],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "astroom",
