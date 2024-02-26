@@ -18,14 +18,14 @@ export const navigation: Navigation = {
       name: "About",
       href: "/about",
     },
-    {
-      name: "Projects",
-      href: "/projects",
-    },
-    {
-      name: "Contact",
-      href: "/contact",
-    },
+    // {
+    //   name: "Projects",
+    //   href: "/projects",
+    // },
+    // {
+    //   name: "Contact",
+    //   href: "/contact",
+    // },
   ],
 }
 
