@@ -1,4 +1,5 @@
 export function Timeline() {
+
   const timelineData = [
     {
       id: 1,

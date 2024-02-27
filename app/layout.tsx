@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "./globals.css";
-import HeaderNav from "@/components/ui/header-nav";
+import { HeaderNav, Footer } from "@/components/ui";
 
 const font = localFont({
   src: [{ path: '../public/fonts/source-code-pro.woff2', style: "normal" }],
@@ -29,6 +29,10 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+
+        <footer className="fixed bottom-0 inset-x-0 z-20">
+          <Footer />
+        </footer>
 
       </body>
     </html>

@@ -2,6 +2,7 @@ import { FaDocker, FaPython, FaJsSquare, FaReact, FaHtml5, FaPhp } from 'react-i
 import { SiVercel, SiMariadb, SiPterodactyl, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn } from "react-icons/si";
 
 export function KnowledgeList() {
+
   const skills = {
     "Programming Languages": [
       { id: 'html', name: 'HTML', icon: <FaHtml5 /> },

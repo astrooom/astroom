@@ -7,7 +7,7 @@ import { cn } from '@/utils/cn';
 import { usePathname } from 'next/navigation';
 import { useMemo } from 'react';
 
-export default function HeaderNav() {
+export function HeaderNav() {
   const pathname = usePathname();
   const navigation = useMemo(() => getNavigation("main"), []);
 
