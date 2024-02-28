@@ -17,10 +17,10 @@ export default function About() {
   };
 
   return (
-    <div className="text-left divide-y divide-neutral-400 flex flex-col gap-y-6">
+    <div className="divide-y divide-neutral-400 flex flex-col gap-y-6">
 
-      <div className="flex justify-between items-center">
-        <div className="w-6/12">
+      <div className="sm:flex sm:justify-between items-center">
+        <div className="sm:w-6/12">
           <h1 className="text-2xl font-semibold mb-4 text-neutral-50">About Me</h1>
           <p className="text-lg mb-4 text-neutral-100">
             Hello! I&apos;m a {getAge()} year old passionate developer and system administrator from Gothenburg, Sweden. With a keen interest in technology and innovation, I&apos;ve dedicated myself to exploring the depths of software development and system architecture.
@@ -45,12 +45,12 @@ export default function About() {
         </div>
       </div>
 
-      <div className="mt-8 py-12 flex justify-between gap-x-4">
-        <div className="w-6/12">
+      <div className="mt-8 py-12 flex sm:justify-between sm:flex-row flex-col gap-x-4">
+        <div className="sm:w-6/12">
           <KnowledgeList />
         </div>
 
-        <div className="w-6/12 mt-1">
+        <div className="sm:w-6/12 mt-1">
           <Timeline />
         </div>
 

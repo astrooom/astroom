@@ -19,7 +19,7 @@ export function HeaderNav() {
             <div className="relative flex h-12 justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white-400 hover:bg-gray-100 hover:white-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white-400 hover:bg-gray-100 hover:ring-neutral-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-neutral-200">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -32,11 +32,6 @@ export function HeaderNav() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   astroom
-                  {/* <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt="Your Company"
-                  /> */}
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {navigation.map((item, index) => (
@@ -58,15 +53,13 @@ export function HeaderNav() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pb-4 pt-2">
-              {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
-
               {navigation.map((item, index) => (
                 <Disclosure.Button
                   key={`${index}_${item.href}`}
                   as="a"
                   href={item.href}
-                  className={cn(pathname === item.href ? "block border-l-4 border-blue-500 py-2 pl-3 pr-4 text-base font-medium text-blue-500" :
-                    "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                  className={cn("bg-black/90", pathname === item.href ? "block border-l-4 border-neutral-500 py-2 pl-3 pr-4 text-base font-medium text-neutral-200" :
+                    "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-neutral-200 hover:border-neutral-100"
                   )}
                 >
                   {item.name}
