@@ -4,8 +4,8 @@ export function Timeline() {
     {
       id: 1,
       date: "August 2022 - Today",
-      title: "Lead Developer @ UltraServers",
-      description: "I'm currently working as a lead developer at UltraServers, a game hosting company that offers high-performance servers for a variety of games. My role involves developing new features, finding the best solution to problems, maintaining the existing codebase, as well as collaborating with the team to ensure the best possible user experience."
+      title: "Lead Developer @ ULTRASERVERS",
+      description: "I'm currently working as a lead developer at ULTRASERVERS, a game hosting company that offers high-performance servers for a variety of games. My role involves developing new features, finding the best solution to problems, maintaining the existing codebase, as well as collaborating with the team to ensure the best possible user experience."
     },
     {
       id: 2,
