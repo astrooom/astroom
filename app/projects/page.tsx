@@ -61,7 +61,7 @@ export default function Projects() {
 
       <div>
         <h1 className="text-2xl font-semibold mb-4 text-neutral-50">Projects</h1>
-        <p>These are the projects I'm currently engaged in and have worked on in the past.</p>
+        <p>These are the projects I&apos;m currently engaged in and have worked on in the past.</p>
       </div>
 
       {Object.entries(projects).map(([section, projectItems]) => (
