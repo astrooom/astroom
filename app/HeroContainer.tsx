@@ -3,7 +3,7 @@
 import { cn } from "@/utils/cn";
 import { TypewriterEffectSmooth, Boxes } from "@components/ui";
 import { FaArrowRightLong } from "react-icons/fa6";
-
+import Link from "next/link";
 export function HeroContainer({ className }: Readonly<{ className?: string; }>) {
 
   const helloWords = [
@@ -32,9 +32,13 @@ export function HeroContainer({ className }: Readonly<{ className?: string; }>) 
         Developer | Creator | System Administrator.
       </p>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 my-4">
-        <a className="px-6 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" href="/about">
+        <Link className="px-6 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" href="/about">
           About Me <FaArrowRightLong className="inline-block" />
-        </a>
+        </Link>
+
+        <Link className="px-6 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" href="/projects">
+          Projects <FaArrowRightLong className="inline-block" />
+        </Link>
       </div>
     </div >
 
