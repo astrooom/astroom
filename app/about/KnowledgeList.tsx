@@ -1,6 +1,5 @@
 import { FaDocker, FaPython, FaJsSquare, FaReact, FaHtml5, FaPhp } from 'react-icons/fa'; // Import icons
-import { SiVercel, SiMariadb, SiPterodactyl, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn } from "react-icons/si";
-
+import { SiVercel, SiMariadb, SiPterodactyl, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn, SiCelery } from "react-icons/si";
 export function KnowledgeList() {
 
   const skills = {
@@ -23,6 +22,7 @@ export function KnowledgeList() {
       { id: 'redis', name: 'Redis', icon: <SiRedis /> },
       { id: 'traefik', name: 'Traefik', icon: <SiTraefikproxy /> },
       { id: 'gunicorn', name: 'Gunicorn', icon: <SiGunicorn /> },
+      { id: 'celery', name: 'Celery', icon: <SiCelery /> },
     ],
     "Cloud": [
       { id: 'github', name: 'GitHub', icon: <SiGithub /> },
