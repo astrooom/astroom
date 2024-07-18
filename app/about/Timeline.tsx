@@ -2,6 +2,12 @@ export function Timeline() {
 
   const timelineData = [
     {
+      id: 0,
+      date: "May 2024 - Today",
+      title: "Building SiteChatty",
+      description: "I'm currently building a chatbot that can answer questions about your website. I'm using Next.js, Flask, and the OpenAI API to build it."
+    },
+    {
       id: 1,
       date: "August 2022 - Today",
       title: "Lead Developer @ ULTRASERVERS",

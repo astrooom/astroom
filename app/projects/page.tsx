@@ -8,7 +8,7 @@ export default function Projects() {
 
     "Current": [
       {
-        title: "Lead Developer @ ULTRASERVERS",
+        title: "Lead Developer @ ULTRASERVERS [Self-Employed]",
         link: "https://ultraservers.com",
         companyLogo: "/ultraservers_logo_transparent.png",
         altText: "Ultraservers Logo",
@@ -19,6 +19,18 @@ export default function Projects() {
           "Fullstack development in Next.js, Python, PHP and SQL (among others...)",
           "Managing core infrastructure and development workflow pipelines",
           "Optimizing website performance and user experience"
+        ]
+      },
+
+      {
+        title: "Building SiteChatty",
+        link: "https://github.com/astrooom/sitechatty",
+        companyLogo: "/sitechatty.png",
+        altText: "SiteChatty Logo",
+        period: "May 2024 - Present",
+        description: "SiteChatty is a AI-driven chatbot trained on sources from your website.",
+        duties: [
+          "Fullstack development with Next.js, Flask, Vector Databases and the OpenAI API."
         ]
       },
 
@@ -34,25 +46,24 @@ export default function Projects() {
           "Finding new clients",
           "Delivering high-quality services to clients"
         ]
-      }
+      },
     ],
 
-    // "Previous": [
-    //   {
-    //     title: "System Administrator @ 365HOSTS",
-    //     link: "https://ultraservers.com",
-    //     companyLogo: "/ultraservers_logo_transparent.png",
-    //     altText: "Ultraservers Logo",
-    //     period: "August 2022 - Present",
-    //     description: "ULTRASERVERS is the most ambitious game hosting service...  I contribute to the design, development, and maintenance of the platform.",
-    //     section: "Previous",
-    //     duties: [
-    //       "Design and implement scalable web applications",
-    //       "Collaborate with cross-functional teams",
-    //       "Optimize website performance and user experience"
-    //     ]
-    //   },
-    // ]
+    "Previous": [
+      {
+        title: "System Administrator @ 365HOSTS [Self-Employed]",
+        link: "https://ultraservers.com",
+        companyLogo: "/365hosts.png",
+        altText: "365Hosts Logo",
+        period: "June 2021 - August 2023",
+        description: "365Hosts is a web hosting company that provides a wide range of hosting solutions. My role was to manage game servers, troubleshoot technical issues, and ensure the best possible user experience.",
+        section: "Previous",
+        duties: [
+          "Managing core-infrastructure related to game server hosting",
+          "Handle support tickets related to Game Servers such as Minecraft",
+        ]
+      },
+    ]
   }
 
 
@@ -69,7 +80,7 @@ export default function Projects() {
           <h2 className="text-right text-xl font-semibold text-neutral-50 border-t border-white/70 p-4">{section}</h2>
           <div className="flex flex-col gap-y-8">
             {projectItems.map((project) => (
-              <ProjectItem key={project.title} {...project} />
+              <ProjectItem section={section} key={project.title} {...project} />
             ))}
           </div>
         </div>

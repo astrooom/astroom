@@ -17,7 +17,7 @@ export function HeroContainer({ className }: Readonly<{ className?: string; }>) 
     },
     {
       text: "astroom.",
-      className: "text-neutral-200",
+      className: "text-neutral-100",
     }
   ];
 
@@ -29,7 +29,7 @@ export function HeroContainer({ className }: Readonly<{ className?: string; }>) 
       {/* <Boxes /> */}
       <TypewriterEffectSmooth words={helloWords} />
       <p className="text-neutral-400 text-xs sm:text-base my-2">
-        Developer | Creator | System Administrator.
+        Web Developer | System Administrator.
       </p>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 my-4">
         <Link className="px-6 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" href="/about">

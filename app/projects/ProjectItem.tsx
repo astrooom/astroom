@@ -3,6 +3,7 @@ import NextImage from 'next/image';
 import Link from 'next/link';
 
 type ProjectItemProps = {
+  section: string;
   title: string;
   link: string;
   companyLogo: string;
@@ -12,7 +13,7 @@ type ProjectItemProps = {
   duties: string[];
 };
 
-export const ProjectItem = ({ title, link, companyLogo, altText, period, description, duties }: ProjectItemProps) => {
+export const ProjectItem = ({ section, title, link, companyLogo, altText, period, description, duties }: ProjectItemProps) => {
   return (
     <div>
       <div className="flex items-center gap-2">
@@ -44,7 +45,7 @@ export const ProjectItem = ({ title, link, companyLogo, altText, period, descrip
       {/* What I Do Section */}
       {duties && duties.length > 0 && ( // Check if duties exist
         <div className="mt-4">
-          <h4 className="text-neutral-100 font-semibold">What I Do:</h4>
+          <h4 className="text-neutral-100 font-semibold">{section === "Current" ? "What I Do" : "What I Did"}</h4>
           <ul className="list-disc list-inside text-neutral-300">
             {duties.map((duty, index) => (
               <li key={index}>{duty}</li>

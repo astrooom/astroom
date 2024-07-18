@@ -1,5 +1,5 @@
 import { FaDocker, FaPython, FaJsSquare, FaReact, FaHtml5, FaPhp } from 'react-icons/fa'; // Import icons
-import { SiVercel, SiMariadb, SiPterodactyl, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn, SiCelery } from "react-icons/si";
+import { SiVercel, SiMysql, SiPterodactyl, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn, SiCelery, SiOpenai } from "react-icons/si";
 export function KnowledgeList() {
 
   const skills = {
@@ -18,7 +18,7 @@ export function KnowledgeList() {
     "Tools": [
       { id: 'docker', name: 'Docker', icon: <FaDocker /> },
       { id: "pterodactyl", name: "Pterodactyl", icon: <SiPterodactyl /> },
-      { id: 'mariadb', name: 'MariaDB', icon: <SiMariadb /> },
+      { id: 'sql', name: 'SQL', icon: <SiMysql /> },
       { id: 'redis', name: 'Redis', icon: <SiRedis /> },
       { id: 'traefik', name: 'Traefik', icon: <SiTraefikproxy /> },
       { id: 'gunicorn', name: 'Gunicorn', icon: <SiGunicorn /> },
@@ -27,6 +27,7 @@ export function KnowledgeList() {
     "Cloud": [
       { id: 'github', name: 'GitHub', icon: <SiGithub /> },
       { id: "vercel", name: "Vercel", icon: <SiVercel /> },
+      { id: 'openai', name: 'OpenAI', icon: <SiOpenai /> },
     ],
   };
 
