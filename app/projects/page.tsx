@@ -52,7 +52,7 @@ export default function Projects() {
     "Previous": [
       {
         title: "System Administrator @ 365HOSTS [Self-Employed]",
-        link: "https://ultraservers.com",
+        link: "https://365hosts.com",
         companyLogo: "/365hosts.png",
         altText: "365Hosts Logo",
         period: "June 2021 - August 2023",
