@@ -35,12 +35,12 @@ export default function Projects() {
       },
 
       {
-        title: "Owner of AB Buddleja",
+        title: "Owner of Buddleja Limited Company",
         link: "https://astroom.dev",
         companyLogo: "/ab-buddleja.png",
-        altText: "AB Buddleja Logo",
+        altText: "Buddleja Limited Company Logo",
         period: "October 2022 - Present",
-        description: "I started my own company in Sweden for self-employment, AB Buddleja, which focuses on providing fullstack development & system administration services to clients.",
+        description: "I started my own company in Sweden for self-employment, AB Buddleja (limited company), which focuses on providing fullstack development & system administration services to clients.",
         duties: [
           "Managing the company (Accounting, filing taxes and all that stuff)",
           "Finding new clients",

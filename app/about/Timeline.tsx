@@ -16,8 +16,8 @@ export function Timeline() {
     {
       id: 2,
       date: "October 2022 - Today",
-      title: "Started AB Buddleja",
-      description: "I started my own company for self-employment, AB Buddleja, which focuses on providing development & system administration services to clients. I'm responsible for managing the company, finding new clients, and delivering high-quality services to meet their needs."
+      title: "Started Limited Company",
+      description: "I started my own company for self-employment, AB Buddleja (limited company), which focuses on providing development & system administration services to clients. I'm responsible for managing the company, finding new clients, and delivering high-quality services to meet their needs."
     },
     {
       id: 3,
