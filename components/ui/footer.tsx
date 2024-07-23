@@ -3,7 +3,7 @@ export function Footer() {
   return (
     <div className="p-4">
       <p className="text-xs text-neutral-200">
-        &copy; {currentYear} AB Buddleja. All rights reserved.
+        &copy; {currentYear} BUDDLEJA LIMITED COMPANY. All rights reserved.
       </p>
     </div>
   )
