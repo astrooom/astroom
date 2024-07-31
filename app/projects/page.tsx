@@ -47,7 +47,7 @@ export default function Projects() {
       },
 
       {
-        title: "Owner of Buddleja Limited Company",
+        title: "Owner of BUDDLEJA CORPORATION",
         link: "https://astroom.dev",
         companyLogo: "/ab-buddleja.png",
         altText: "Buddleja Limited Company Logo",
