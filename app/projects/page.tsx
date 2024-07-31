@@ -23,7 +23,19 @@ export default function Projects() {
       },
 
       {
-        title: "Building SiteChatty",
+        title: "SpeedyWrite.com",
+        link: "https://speedywrite.com",
+        companyLogo: "/speedywrite.svg",
+        altText: "SpeedyWrite Logo",
+        period: "July 2024 - Present",
+        description: "SpeedyWrite is an all-in-one platform to generate AI content and start making money in minutes. ",
+        duties: [
+          "Fullstack development with PHP Laravel, JavaScript and the OpenAI API."
+        ]
+      },
+
+      {
+        title: "SiteChatty [WIP]",
         link: "https://github.com/astrooom/sitechatty",
         companyLogo: "/sitechatty.png",
         altText: "SiteChatty Logo",

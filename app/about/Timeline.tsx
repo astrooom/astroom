@@ -2,25 +2,31 @@ export function Timeline() {
 
   const timelineData = [
     {
-      id: 0,
+      id: 1,
+      date: "July 2024",
+      title: "Released SpeedyWrite.com",
+      description: "All-in-one platform to generate AI content and start making money in minutes. I used PHP Laravel, JavaScript and the OpenAI API."
+    },
+    {
+      id: 2,
       date: "May 2024 - Today",
       title: "Building SiteChatty",
       description: "I'm currently building a chatbot that can answer questions about your website. I'm using Next.js, Flask, and the OpenAI API to build it."
     },
     {
-      id: 1,
+      id: 3,
       date: "August 2022 - Today",
       title: "Lead Developer @ ULTRASERVERS",
       description: "I'm currently working as a lead developer at ULTRASERVERS, a game hosting company that offers high-performance servers for a variety of games. My role involves developing new features, finding the best solution to problems, maintaining the existing codebase, as well as collaborating with the team to ensure the best possible user experience."
     },
     {
-      id: 2,
-      date: "October 2022 - Today",
+      id: 4,
+      date: "October 2022",
       title: "Started Limited Company",
       description: "I started my own company for self-employment, AB Buddleja (limited company), which focuses on providing development & system administration services to clients. I'm responsible for managing the company, finding new clients, and delivering high-quality services to meet their needs."
     },
     {
-      id: 3,
+      id: 5,
       date: "June 2021 - August 2023",
       title: "System Administrator @ 365Hosts",
       description: "I worked as a system administrator at 365Hosts, a web hosting company that provides a wide range of hosting solutions. My responsibilities included managing servers, troubleshooting technical issues, and ensuring the smooth operation of the hosting infrastructure."

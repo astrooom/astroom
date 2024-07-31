@@ -6,6 +6,8 @@ import { getNavigation } from '@/utils/navigation';
 import { cn } from '@/utils/cn';
 import { usePathname } from 'next/navigation';
 import { useMemo } from 'react';
+import NextImage from 'next/image';
+import Link from 'next/link';
 
 export function HeaderNav() {
   const pathname = usePathname();
@@ -30,9 +32,10 @@ export function HeaderNav() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
-                <div className="flex flex-shrink-0 items-center">
-                  astroom
-                </div>
+                
+                <Link className="flex flex-shrink-0 items-center" href="/">
+                <NextImage src="/astroom_small_transparent.png" alt="astroom logo" width={32} height={32} /> astroom 
+                </Link>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {navigation.map((item, index) => (
                     <a
