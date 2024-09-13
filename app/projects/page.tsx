@@ -8,7 +8,7 @@ export default function Projects() {
 
     "Current": [
       {
-        title: "Lead Developer @ ULTRASERVERS [Self-Employed]",
+        title: "Lead Developer @ ULTRASERVERS",
         link: "https://ultraservers.com",
         companyLogo: "/ultraservers_logo_transparent.png",
         altText: "Ultraservers Logo",
@@ -23,11 +23,23 @@ export default function Projects() {
       },
 
       {
+        title: "Popuply.net",
+        link: "https://popuply.net",
+        companyLogo: "/popuply.png",
+        altText: "Popuply Logo",
+        period: "September 2024",
+        description: "Popuply is a simple tool for creating simple popup toasts for your website without needing any coding.",
+        duties: [
+          "Fullstack development with Next.js, Vanilla JS, Websockets and Postgres."
+        ]
+      },
+
+      {
         title: "SpeedyWrite.com",
         link: "https://speedywrite.com",
         companyLogo: "/speedywrite.svg",
         altText: "SpeedyWrite Logo",
-        period: "July 2024 - Present",
+        period: "July 2024",
         description: "SpeedyWrite is an all-in-one platform to generate AI content and start making money in minutes. ",
         duties: [
           "Fullstack development with PHP Laravel, JavaScript and the OpenAI API."
@@ -63,7 +75,7 @@ export default function Projects() {
 
     "Previous": [
       {
-        title: "System Administrator @ 365HOSTS [Self-Employed]",
+        title: "System Administrator @ 365HOSTS",
         link: "https://365hosts.com",
         companyLogo: "/365hosts.png",
         altText: "365Hosts Logo",

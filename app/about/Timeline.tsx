@@ -2,6 +2,12 @@ export function Timeline() {
 
   const timelineData = [
     {
+      id: 0,
+      date: "September 2024",
+      title: "Released Popuply.net",
+      description: "Simple tool for creating simple popup toasts for your website without needing any coding."
+    },
+    {
       id: 1,
       date: "July 2024",
       title: "Released SpeedyWrite.com",
