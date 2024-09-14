@@ -95,7 +95,7 @@ export default function Projects() {
     <div className="max-w-5xl mx-auto px-9 py-12 bg-gradient-to-b from-gray-900 to-black text-white rounded-md">
       <h1 className="text-4xl font-bold mb-6 text-blue-300">Projects</h1>
       <p className="text-lg mb-12 leading-relaxed">
-        These are the projects I'm currently engaged in and have worked on in the past.
+        These are the projects I&apos;m currently engaged in and have worked on in the past.
       </p>
 
       {Object.entries(projects).map(([section, projectItems]) => (
