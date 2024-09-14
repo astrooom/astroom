@@ -1,13 +1,16 @@
 import { FaDocker, FaPython, FaJsSquare, FaReact, FaHtml5, FaPhp } from 'react-icons/fa'; // Import icons
-import { SiVercel, SiMysql, SiPterodactyl, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn, SiCelery, SiOpenai, SiSocketdotio } from "react-icons/si";
+import { SiVercel, SiMysql, SiPterodactyl, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn, SiCelery, SiOpenai, SiSocketdotio, SiGo, SiTsnode } from "react-icons/si";
 export function KnowledgeList() {
 
   const skills = {
     "Programming Languages": [
       { id: 'html', name: 'HTML', icon: <FaHtml5 /> },
       { id: 'js', name: 'JavaScript', icon: <FaJsSquare /> },
+      { id: 'ts', name: 'TypeScript', icon: <SiTsnode /> },
       { id: 'python', name: 'Python', icon: <FaPython /> },
       { id: 'php', name: 'PHP', icon: <FaPhp /> },
+      { id: 'sql', name: 'SQL', icon: <SiMysql /> },
+      { id: 'Go', name: 'Go', icon: <SiGo /> },
     ],
     "Frameworks": [
       { id: 'react', name: 'React', icon: <FaReact /> },
@@ -18,7 +21,6 @@ export function KnowledgeList() {
     "Tools": [
       { id: 'docker', name: 'Docker', icon: <FaDocker /> },
       { id: "pterodactyl", name: "Pterodactyl", icon: <SiPterodactyl /> },
-      { id: 'sql', name: 'SQL', icon: <SiMysql /> },
       { id: 'redis', name: 'Redis', icon: <SiRedis /> },
       { id: 'traefik', name: 'Traefik', icon: <SiTraefikproxy /> },
       { id: 'gunicorn', name: 'Gunicorn', icon: <SiGunicorn /> },
