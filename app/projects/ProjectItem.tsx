@@ -1,6 +1,7 @@
 import React from 'react';
-import NextImage from 'next/image';
 import Link from 'next/link';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import Image from 'next/image';
 
 type ProjectItemProps = {
   section: string;
@@ -15,38 +16,38 @@ type ProjectItemProps = {
 
 export const ProjectItem = ({ section, title, link, companyLogo, altText, period, description, duties }: ProjectItemProps) => {
   return (
-    <div>
-      <div className="flex items-center gap-2">
-        <div>
-          <h3 className="text-neutral-100 font-semibold text-lg">
-            {link ? (
-              <Link className="hover:underline text-blue-300" target="_blank" href={link}>
-                {title}
-              </Link>
-            ) : (
-              title
-            )}
-          </h3>
-          <p>{period}</p>
-        </div>
-        <div>
-          <NextImage
+    <div className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-blue-500/20 transition-shadow duration-300">
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center space-x-4">
+          <Image
             src={companyLogo}
             alt={altText}
-            width={48}
-            height={48}
-            quality={60}
+            width={64}
+            height={64}
+            quality={80}
+
           />
+          <div>
+            <h3 className="text-xl font-semibold text-blue-300">
+              {link ? (
+                <Link href={link} target="_blank" className="hover:underline flex items-center">
+                  {title} <FaExternalLinkAlt className="ml-2 text-sm" />
+                </Link>
+              ) : (
+                title
+              )}
+            </h3>
+            <p className="text-sm text-gray-400">{period}</p>
+          </div>
         </div>
       </div>
-
-      <p className="text-neutral-300 tracking-wide leading-relaxed mt-2">{description}</p> {/* Added some top margin */}
-
-      {/* What I Do Section */}
-      {duties && duties.length > 0 && ( // Check if duties exist
-        <div className="mt-4">
-          <h4 className="text-neutral-100 font-semibold">{section === "Current" ? "What I Do" : "What I Did"}</h4>
-          <ul className="list-disc list-inside text-neutral-300">
+      <p className="text-gray-300 mb-4">{description}</p>
+      {duties && duties.length > 0 && (
+        <div>
+          <h4 className="text-lg font-semibold text-blue-200 mb-2">
+            {section === "Current" ? "What I Do" : "What I Did"}
+          </h4>
+          <ul className="list-disc list-inside text-gray-300 space-y-1">
             {duties.map((duty, index) => (
               <li key={index}>{duty}</li>
             ))}

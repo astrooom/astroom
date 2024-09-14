@@ -92,30 +92,29 @@ export default function Projects() {
 
 
   return (
-    <div className="flex flex-col gap-y-12 pb-12">
-
-      <div>
-        <h1 className="text-2xl font-semibold mb-4 text-neutral-50">Projects</h1>
-        <p>These are the projects I&apos;m currently engaged in and have worked on in the past.</p>
-      </div>
+    <div className="max-w-5xl mx-auto px-9 py-12 bg-gradient-to-b from-gray-900 to-black text-white rounded-md">
+      <h1 className="text-4xl font-bold mb-6 text-blue-300">Projects</h1>
+      <p className="text-lg mb-12 leading-relaxed">
+        These are the projects I'm currently engaged in and have worked on in the past.
+      </p>
 
       {Object.entries(projects).map(([section, projectItems]) => (
-        <div key={section}> {/* Key for the section div */}
-          <h2 className="text-right text-xl font-semibold text-neutral-50 border-t border-white/70 p-4">{section}</h2>
-          <div className="flex flex-col gap-y-8">
+        <div key={section} className="mb-16">
+          <h2 className="text-2xl font-semibold mb-8 text-right text-blue-200 border-b border-blue-500/30 pb-2">
+            {section}
+          </h2>
+          <div className="grid gap-12 md:grid-cols-2">
             {projectItems.map((project) => (
-              <ProjectItem section={section} key={project.title} {...project} />
+              <ProjectItem key={project.title} section={section} {...project} />
             ))}
           </div>
         </div>
       ))}
 
-
-      <p className="my-4 flex flex-col items-center text-lg text-neutral-300">
-        <LuConstruction size={48} className="inline" />
-        <span>Under construction - more projects coming soon!</span>
-      </p>
-
+      <div className="mt-16 flex flex-col items-center text-lg text-neutral-300 bg-gray-800 rounded-lg p-8 shadow-lg">
+        <LuConstruction size={64} className="text-yellow-500 mb-4" />
+        <span className="text-center">Under construction - more exciting projects coming soon!</span>
+      </div>
     </div>
 
 
