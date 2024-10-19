@@ -22,13 +22,13 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="md:w-2/3">
             <p className="text-lg mb-4 leading-relaxed">
-              Hey there! I'm a {getAge()}-year-old developer and system admin from Gothenburg, Sweden. I love working with technology and solving complex problems.
+              Hey there! I&apos;m a {getAge()}-year-old developer and system admin from Gothenburg, Sweden. I love working with technology and solving complex problems.
             </p>
             <p className="text-lg mb-4 leading-relaxed">
               My experience covers web development, system administration, and everything in between. I enjoy learning new technologies and applying them to create efficient solutions.
             </p>
             <p className="text-lg leading-relaxed">
-              When I'm not coding, you'll find me exploring new tech trends, contributing to open-source projects, or sharing knowledge with fellow developers.
+              When I&apos;m not coding, you&apos;ll find me exploring new tech trends, contributing to open-source projects, or sharing knowledge with fellow developers.
             </p>
           </div>
           <div className="md:w-1/3 flex justify-center">
