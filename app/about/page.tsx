@@ -22,18 +22,18 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="md:w-2/3">
             <p className="text-lg mb-4 leading-relaxed">
-              Hello! I&apos;m a {getAge()} year old passionate developer and system administrator from Gothenburg, Sweden. With a keen interest in technology and innovation, I&apos;ve dedicated myself to exploring the depths of software development and system architecture.
+              Hey there! I'm a {getAge()}-year-old developer and system admin from Gothenburg, Sweden. I love working with technology and solving complex problems.
             </p>
             <p className="text-lg mb-4 leading-relaxed">
-              My journey in the tech industry has been a blend of curiosity, learning, and overcoming challenges. From crafting dynamic web applications to optimizing robust systems, I&apos;ve navigated through various facets of technology to enhance my skills and contribute meaningful solutions.
+              My experience covers web development, system administration, and everything in between. I enjoy learning new technologies and applying them to create efficient solutions.
             </p>
             <p className="text-lg leading-relaxed">
-              Beyond my professional endeavors, I find joy in sharing knowledge, collaborating with fellow tech enthusiasts, and staying updated with the latest trends in technology.
+              When I'm not coding, you'll find me exploring new tech trends, contributing to open-source projects, or sharing knowledge with fellow developers.
             </p>
           </div>
           <div className="md:w-1/3 flex justify-center">
             <Image
-              src="/about_me.webp"
+              src="/astroom_main_transparent.png"
               alt="About me"
               width={300}
               height={300}

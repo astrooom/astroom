@@ -1,8 +1,9 @@
 import { cn } from "@/utils/cn";
 import { TypewriterEffectSmooth } from "@components/ui";
-import { FaArrowRightLong, FaGithub } from "react-icons/fa6";
+import { FaArrowRightLong, FaDiscord, FaGithub, FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
+import { DiscordButton } from "./DiscordButton";
 
 export function HeroContainer({ className }: { className?: string }) {
   const helloWords = [
@@ -13,13 +14,13 @@ export function HeroContainer({ className }: { className?: string }) {
 
   return (
     <div className={cn("flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-black text-white p-4", className)}>
-      <div className="relative mb-8">
+      <div className="relative mb-8 group">
         <Image
-          src="/astroom_main_transparent.png"
+          src="/astroom_planet.png"
           alt="astroom"
           width={220}
           height={220}
-          className="rounded-full border-4 border-blue-500 shadow-lg shadow-blue-500/50"
+          className="transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-12"
         />
       </div>
 
@@ -48,13 +49,26 @@ export function HeroContainer({ className }: { className?: string }) {
         </Link>
       </div>
 
-      <Link
-        href="https://github.com/astrooom"
-        target="_blank"
-        className="z-10 text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
-      >
-        <FaGithub className="text-3xl" />
-      </Link>
+
+      <div className="flex items-center gap-x-1">
+        <Link
+          href="https://github.com/astrooom"
+          target="_blank"
+          className="z-10 text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+        >
+          <FaGithub className="text-3xl" />
+        </Link>
+
+        <Link
+          href="https://twitter.com/astroomdev"
+          target="_blank"
+          className="z-10 text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+        >
+          <FaXTwitter className="text-3xl" />
+        </Link>
+
+        <DiscordButton />
+      </div>
     </div>
   );
 }
