@@ -1,4 +1,3 @@
-
 import { KnowledgeList } from "./KnowledgeList";
 import { Timeline } from "./Timeline";
 import Image from "next/image";
@@ -9,11 +8,16 @@ export default function About() {
     const currentDate = new Date();
     const age = currentDate.getFullYear() - birthDate.getFullYear();
     const month = currentDate.getMonth() - birthDate.getMonth();
-    if (month < 0 || (month === 0 && currentDate.getDate() < birthDate.getDate())) {
-      return age - 1;
-    }
-    return age;
+    return month < 0 || (month === 0 && currentDate.getDate() < birthDate.getDate()) ? age - 1 : age;
   };
+
+  const highlights = [
+    "🚀 Full-stack Developer & System Admin",
+    "🌍 Based in Gothenburg, Sweden",
+    "💻 Web Development Enthusiast",
+    "🔧 Problem Solver",
+    "📚 Continuous Learner"
+  ];
 
   return (
     <div className="max-w-5xl mx-auto px-9 py-12 bg-gradient-to-b from-gray-900 to-black text-white rounded-md">
@@ -21,15 +25,16 @@ export default function About() {
         <h1 className="text-4xl font-bold mb-6 text-blue-300">About Me</h1>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="md:w-2/3">
-            <p className="text-lg mb-4 leading-relaxed">
-              Hey there! I&apos;m a {getAge()}-year-old developer and system admin from Gothenburg, Sweden. I love working with technology and solving complex problems.
-            </p>
-            <p className="text-lg mb-4 leading-relaxed">
-              My experience covers web development, system administration, and everything in between. I enjoy learning new technologies and applying them to create efficient solutions.
-            </p>
-            <p className="text-lg leading-relaxed">
-              When I&apos;m not coding, you&apos;ll find me exploring new tech trends, contributing to open-source projects, or sharing knowledge with fellow developers.
-            </p>
+            <div className="text-xl mb-6">
+              Hey there! 👋 I&apos;m a {getAge()}-year-old tech enthusiast from Sweden.
+            </div>
+            <ul className="space-y-3">
+              {highlights.map((highlight, index) => (
+                <li key={index} className="flex items-center text-lg">
+                  <span className="text-blue-300">{highlight}</span>
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="md:w-1/3 flex justify-center">
             <Image
