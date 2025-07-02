@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://astroom.dev/sitemap.xml
+
+# Block any potential sensitive paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1 

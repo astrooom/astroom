@@ -1,0 +1,40 @@
+{
+  "name": "astroom - System Administrator & Full-Stack Developer",
+  "short_name": "astroom",
+  "description": "Interactive terminal-style CV showcasing expertise in system administration and development",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/astroom_small.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/astroom_planet.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "portfolio",
+    "resume",
+    "developer",
+    "technology"
+  ],
+  "lang": "en",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/astroom_planet.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "Terminal CV Interface"
+    }
+  ]
+}

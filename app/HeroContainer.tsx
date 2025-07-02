@@ -18,7 +18,7 @@ export function HeroContainer({ className }: { className?: string }) {
       <div className="relative mb-8 group">
         <Image
           src="/astroom_planet.png"
-          alt="Olle Ljung"
+          alt="astroom"
           width={220}
           height={220}
           className="transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-12"
