@@ -700,7 +700,7 @@ export default function Home() {
         {/* Welcome Header */}
         <header className="text-center mb-6">
           <h1 className="text-2xl sm:text-3xl font-bold text-[var(--terminal-green)] mb-2">
-            Welcome to astroom's Interactive CV
+            Welcome to astroom&apos;s Interactive CV
           </h1>
           <p className="text-[var(--terminal-gray)] text-sm sm:text-base mb-4">
             System Administrator & Full-Stack Developer | Gothenburg, Sweden
@@ -815,7 +815,7 @@ export default function Home() {
                 Interactive Terminal Interface
               </div>
               <div className="text-[var(--terminal-gray)] text-sm">
-                Type commands like "cat about.txt" or "help" to explore. Use buttons above for easier navigation.
+                Type commands like &quot;cat about.txt&quot; or &quot;help&quot; to explore. Use buttons above for easier navigation.
               </div>
               <div className="border-b border-[var(--terminal-border)] my-2"></div>
             </div>
