@@ -1,36 +1,51 @@
-import { FaDocker, FaPython, FaJsSquare, FaReact, FaHtml5, FaPhp } from 'react-icons/fa'; // Import icons
-import { SiVercel, SiMysql, SiPterodactyl, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn, SiCelery, SiOpenai, SiSocketdotio, SiGo, SiTsnode } from "react-icons/si";
+import { FaDocker, FaPython, FaJsSquare, FaReact, FaHtml5, FaPhp, FaGitAlt } from 'react-icons/fa'; // Import icons
+import { SiVercel, SiMysql, SiRedis, SiFlask, SiNextdotjs, SiLaravel, SiTraefikproxy, SiGithub, SiGunicorn, SiCelery, SiOpenai, SiSocketdotio, SiGo, SiTypescript, SiVuedotjs, SiNuxtdotjs, SiFlutter, SiJquery, SiAnsible, SiNginx, SiTailwindcss, SiGithubactions, SiGnubash } from "react-icons/si";
+
 export function KnowledgeList() {
 
   const skills = {
     "Programming Languages": [
       { id: 'html', name: 'HTML', icon: <FaHtml5 /> },
       { id: 'js', name: 'JavaScript', icon: <FaJsSquare /> },
-      { id: 'ts', name: 'TypeScript', icon: <SiTsnode /> },
+      { id: 'ts', name: 'TypeScript', icon: <SiTypescript /> },
       { id: 'python', name: 'Python', icon: <FaPython /> },
       { id: 'php', name: 'PHP', icon: <FaPhp /> },
       { id: 'sql', name: 'SQL', icon: <SiMysql /> },
-      { id: 'Go', name: 'Go', icon: <SiGo /> },
+      { id: 'go', name: 'Go', icon: <SiGo /> },
+      { id: 'bash', name: 'Bash', icon: <SiGnubash /> },
     ],
     "Frameworks": [
       { id: 'react', name: 'React', icon: <FaReact /> },
       { id: "nextjs", name: "Next.js", icon: <SiNextdotjs /> },
-      { id: 'flask', name: 'Flask', icon: <SiFlask /> },
       { id: 'laravel', name: 'Laravel', icon: <SiLaravel /> },
+      { id: 'flask', name: 'Flask', icon: <SiFlask /> },
+      { id: 'vuejs', name: 'Vue.js', icon: <SiVuedotjs /> },
+      { id: 'nuxtjs', name: 'Nuxt.js', icon: <SiNuxtdotjs /> },
+      { id: 'flutter', name: 'Flutter', icon: <SiFlutter /> },
+      { id: 'jquery', name: 'jQuery', icon: <SiJquery /> },
     ],
-    "Tools": [
+    "Tools / Software": [
       { id: 'docker', name: 'Docker', icon: <FaDocker /> },
-      { id: "pterodactyl", name: "Pterodactyl", icon: <SiPterodactyl /> },
+      { id: 'ansible', name: 'Ansible', icon: <SiAnsible /> },
       { id: 'redis', name: 'Redis', icon: <SiRedis /> },
       { id: 'traefik', name: 'Traefik', icon: <SiTraefikproxy /> },
       { id: 'gunicorn', name: 'Gunicorn', icon: <SiGunicorn /> },
       { id: 'celery', name: 'Celery', icon: <SiCelery /> },
       { id: 'websockets', name: 'Websockets', icon: <SiSocketdotio /> },
+      { id: 'git', name: 'Git', icon: <FaGitAlt /> },
+      { id: 'githubactions', name: 'GitHub Actions', icon: <SiGithubactions /> },
+      { id: 'openai', name: 'OpenAI', icon: <SiOpenai /> },
+      { id: 'nginx', name: 'Nginx', icon: <SiNginx /> },
+      { id: 'tailwind', name: 'Tailwind', icon: <SiTailwindcss /> },
     ],
-    "Cloud": [
+    "Cloud / Platforms": [
       { id: 'github', name: 'GitHub', icon: <SiGithub /> },
       { id: "vercel", name: "Vercel", icon: <SiVercel /> },
-      { id: 'openai', name: 'OpenAI', icon: <SiOpenai /> },
+    ],
+    "Techniques / Solutions": [
+      { id: 'loadbalancing', name: 'Load Balancing', icon: null },
+      { id: 'cicd', name: 'CI/CD Pipelines', icon: null },
+      { id: 'scrum', name: 'Scrum', icon: null },
     ],
   };
 

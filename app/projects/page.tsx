@@ -1,4 +1,3 @@
-
 import { LuConstruction } from "react-icons/lu";
 import { ProjectItem } from "./ProjectItem";
 
@@ -8,94 +7,107 @@ export default function Projects() {
 
     "Current": [
       {
-        title: "Lead Developer @ ULTRASERVERS",
-        link: "https://ultraservers.com",
-        companyLogo: "/ultraservers_logo_transparent.png",
-        altText: "Ultraservers Logo",
-        period: "August 2022 - Present",
-        description: "ULTRASERVERS is the most ambitious game hosting service out there. It offers high-performance servers for a variety of games, going above and beyond it's competitors in the field to provide the best possible experience for game server administrators.",
+        title: "Technical Operations Manager @ Dokibird",
+        link: "https://www.youtube.com/@Dokibird",
+        companyLogo: "/dokibird-logo.jpg",
+        altText: "Dokibird Logo",
+        period: "June 2025 - Present",
+        description: "Managing end-to-end technical infrastructure and operational efficiency for globally recognized content creator Dokibird (85M+ YouTube views, 200K+ followers on Twitch). Ensuring seamless streaming operations and technical excellence.",
         section: "Current",
         duties: [
-          "Fullstack development in Next.js, Python, PHP and SQL (among others...)",
-          "Managing core infrastructure and development workflow pipelines",
-          "Optimizing website performance and user experience"
+          "Managing complete technical infrastructure stack",
+          "Optimizing streaming and content creation workflows",
+          "Ensuring 99.9% uptime for critical streaming operations",
+          "Implementing automation for operational efficiency"
         ]
       },
 
       {
-        title: "Popuply.net",
+        title: "Founding Lead Architect & Developer @ UltraServers",
+        link: "https://ultraservers.com",
+        companyLogo: "/ultraservers_logo_transparent.png",
+        altText: "UltraServers Logo",
+        period: "July 2022 - Present",
+        description: "As a foundational member from UltraServers' inception, pioneered the development of a high-performance game hosting service, laying the groundwork for its significant growth and success in supporting thousands of concurrent users and a rapidly expanding global community.",
+        section: "Current",
+        duties: [
+          "Engineering robust infrastructure designed to exceed industry standards",
+          "Providing technical leadership in platform development",
+          "Driving innovation and optimizing complex systems for peak performance",
+          "Maintaining high code quality standards and scalability",
+          "Full-stack development in Next.js, Python, PHP and SQL"
+        ]
+      },
+
+      {
+        title: "CEO @ AB Buddleja",
+        link: "https://astroom.dev",
+        companyLogo: "/ab-buddleja.png",
+        altText: "AB Buddleja Logo",
+        period: "October 2022 - Present",
+        description: "As a self-employed professional operating through my own limited company, I provide specialized technical operations services to a diverse portfolio of clients, focusing on delivering high-impact solutions and driving operational excellence.",
+        duties: [
+          "Managing the company operations (accounting, filing taxes, business development)",
+          "Providing technical operations consultancy services",
+          "Delivering high-quality solutions to meet diverse client needs",
+          "Building long-term client relationships"
+        ]
+      },
+
+      {
+        title: "Popuply",
         link: "https://popuply.net",
         companyLogo: "/popuply.png",
         altText: "Popuply Logo",
-        period: "September 2024",
-        description: "Popuply is a simple tool for creating simple popup toasts for your website without needing any coding.",
+        period: "2024",
+        description: "Side project web engagement platform designed to convert visitors into engaged customers using configurable, high-impact popup toasts.",
         duties: [
-          "Fullstack development with Next.js, Vanilla JS, Websockets and Postgres."
-        ]
-      },
-
-      {
-        title: "SpeedyWrite.com",
-        link: "https://speedywrite.com",
-        companyLogo: "/speedywrite.svg",
-        altText: "SpeedyWrite Logo",
-        period: "July 2024",
-        description: "SpeedyWrite is an all-in-one platform to generate AI content and start making money in minutes. ",
-        duties: [
-          "Fullstack development with PHP Laravel, JavaScript and the OpenAI API."
-        ]
-      },
-
-      {
-        title: "SiteChatty [WIP]",
-        link: "https://github.com/astrooom/sitechatty",
-        companyLogo: "/sitechatty.png",
-        altText: "SiteChatty Logo",
-        period: "May 2024 - Present",
-        description: "SiteChatty is a AI-driven chatbot trained on sources from your website.",
-        duties: [
-          "Fullstack development with Next.js, Flask, Vector Databases and the OpenAI API."
-        ]
-      },
-
-      {
-        title: "Owner of BUDDLEJA CORPORATION",
-        link: "https://astroom.dev",
-        companyLogo: "/ab-buddleja.png",
-        altText: "Buddleja Limited Company Logo",
-        period: "October 2022 - Present",
-        description: "I started my own company in Sweden for self-employment, AB Buddleja (limited company), which focuses on providing fullstack development & system administration services to clients.",
-        duties: [
-          "Managing the company (Accounting, filing taxes and all that stuff)",
-          "Finding new clients",
-          "Delivering high-quality services to clients"
+          "Full-stack development with Next.js, Vanilla JS, Websockets and Postgres",
+          "User experience optimization and conversion rate improvement",
+          "Building scalable SaaS infrastructure"
         ]
       },
     ],
 
     "Previous": [
       {
-        title: "System Administrator @ 365HOSTS",
+        title: "Full-Stack Developer @ Pine Hosting",
+        link: "https://pinehosting.com",
+        companyLogo: "/pine-hosting-logo.png",
+        altText: "Pine Hosting Logo",
+        period: "April 2022 - January 2023",
+        description: "Drove new feature development for Pine Hosting's game server solution during a key growth phase. Delivered commissioned enhancements that expanded core functionality and significantly elevated the game panel's user experience, contributing to their notable growth and market presence.",
+        section: "Previous",
+        duties: [
+          "Full-stack development of game server management features",
+          "Enhancing user experience and interface design",
+          "Implementing new functionality during company growth phase"
+        ]
+      },
+
+      {
+        title: "Lead Game Server Engineer @ 365Hosts",
         link: "https://365hosts.com",
         companyLogo: "/365hosts.png",
         altText: "365Hosts Logo",
         period: "June 2021 - August 2023",
-        description: "365Hosts is a web hosting company that provides a wide range of hosting solutions. My role was to manage game servers, troubleshoot technical issues, and ensure the best possible user experience.",
+        description: "Engineered and oversaw the complete lifecycle of 365Hosts' game server hosting division, from initial development to ongoing management. My role involved establishing and scaling the specialized infrastructure required to cater directly to hundreds of individual gamers and their diverse communities across a robust server fleet.",
         section: "Previous",
         duties: [
-          "Managing core-infrastructure related to game server hosting",
-          "Handle support tickets related to Game Servers such as Minecraft",
+          "Engineering complete game server hosting infrastructure from ground up",
+          "Managing and scaling server fleet to support hundreds of gamers",
+          "Establishing robust infrastructure for diverse gaming communities",
+          "Overseeing complete lifecycle from development to ongoing management"
         ]
       },
     ]
   }
 
-
   return (
     <div className="max-w-5xl mx-auto px-9 py-12 bg-gradient-to-b from-gray-900 to-black text-white rounded-md">
-      <h1 className="text-4xl font-bold mb-6 text-blue-300">Projects</h1>
+      <h1 className="text-4xl font-bold mb-6 text-blue-300">Experience & Projects</h1>
       <p className="text-lg mb-12 leading-relaxed">
-        These are the projects I&apos;m currently engaged in and have worked on in the past.
+        These are my current professional roles and previous experiences that have shaped my expertise in DevOps engineering, full-stack development, and technical operations.
       </p>
 
       {Object.entries(projects).map(([section, projectItems]) => (
@@ -113,10 +125,8 @@ export default function Projects() {
 
       <div className="mt-16 flex flex-col items-center text-lg text-neutral-300 bg-gray-800 rounded-lg p-8 shadow-lg">
         <LuConstruction size={64} className="text-yellow-500 mb-4" />
-        <span className="text-center">Under construction - more exciting projects coming soon!</span>
+        <span className="text-center">Always working on something new - more exciting projects and experiences coming soon!</span>
       </div>
     </div>
-
-
   );
 }

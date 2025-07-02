@@ -9,8 +9,8 @@ const font = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "astroom",
-  description: "Developer | Creator | System Administrator.",
+  title: "Olle Ljung - DevOps Engineer & Full-Stack Developer",
+  description: "Results-driven DevOps Engineer and Full-Stack Developer with deep experience in building and maintaining scalable, high-performance infrastructure. Based in Gothenburg, Sweden.",
 };
 
 export default function RootLayout({

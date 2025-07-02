@@ -12,11 +12,13 @@ export default function About() {
   };
 
   const highlights = [
-    "🚀 Full-stack Developer & System Admin",
+    "🚀 DevOps Engineer & Full-Stack Developer",
     "🌍 Based in Gothenburg, Sweden",
-    "💻 Web Development Enthusiast",
-    "🔧 Problem Solver",
-    "📚 Continuous Learner"
+    "📱 +46707228827 | olle.ljung@gmail.com",
+    "🏗️ Founding Lead Architect at UltraServers",
+    "🎓 Bachelor's in Informatics from University of Gothenburg",
+    "🏢 CEO of AB Buddleja - Technical Operations Consultancy",
+    "📚 Passionate about continuous learning and innovation"
   ];
 
   return (
@@ -25,8 +27,14 @@ export default function About() {
         <h1 className="text-4xl font-bold mb-6 text-blue-300">About Me</h1>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="md:w-2/3">
-            <div className="text-xl mb-6">
-              Hey there! 👋 I&apos;m a {getAge()}-year-old tech enthusiast from Sweden.
+            <div className="text-xl mb-6 leading-relaxed">
+              Hey there! 👋 I&apos;m Olle, a {getAge()}-year-old results-driven DevOps Engineer and Full-Stack Developer from Gothenburg, Sweden.
+            </div>
+            <div className="text-lg mb-6 leading-relaxed text-gray-300">
+              With deep experience in building and maintaining scalable, high-performance infrastructure for web applications and game hosting platforms, I specialize in automation, containerization, and system optimization to deliver reliable, efficient, and secure deployments.
+            </div>
+            <div className="text-lg mb-6 leading-relaxed text-gray-300">
+              I have a proven track record of leading technical operations from the ground up, ensuring stability in fast-paced, high-demand environments. I&apos;m passionate about continuous learning and always excited to explore new tools, technologies, and best practices within the DevOps and infrastructure domain.
             </div>
             <ul className="space-y-3">
               {highlights.map((highlight, index) => (
@@ -39,7 +47,7 @@ export default function About() {
           <div className="md:w-1/3 flex justify-center">
             <Image
               src="/astroom_main_transparent.png"
-              alt="About me"
+              alt="Olle Ljung"
               width={300}
               height={300}
               quality={80}

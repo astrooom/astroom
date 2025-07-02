@@ -9,7 +9,8 @@ export function HeroContainer({ className }: { className?: string }) {
   const helloWords = [
     { text: "Hello,", className: "text-blue-300" },
     { text: "I'm", className: "text-blue-300" },
-    { text: "astroom.", className: "text-white font-bold" }
+    { text: "Olle", className: "text-white font-bold" },
+    { text: "Ljung.", className: "text-white font-bold" }
   ];
 
   return (
@@ -17,7 +18,7 @@ export function HeroContainer({ className }: { className?: string }) {
       <div className="relative mb-8 group">
         <Image
           src="/astroom_planet.png"
-          alt="astroom"
+          alt="Olle Ljung"
           width={220}
           height={220}
           className="transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-12"
@@ -27,9 +28,9 @@ export function HeroContainer({ className }: { className?: string }) {
       <TypewriterEffectSmooth words={helloWords} className="text-4xl mb-4" />
 
       <div className="text-blue-300 text-lg mb-8 text-center">
-        <span className="inline-block px-2 py-1 rounded-full bg-blue-500/10 backdrop-blur-sm m-1">Web Developer</span>
-        <span className="inline-block px-2 py-1 rounded-full bg-purple-500/10 backdrop-blur-sm m-1">System Administrator</span>
-        <span className="inline-block px-2 py-1 rounded-full bg-green-500/10 backdrop-blur-sm m-1">Tech Enthusiast</span>
+        <span className="inline-block px-2 py-1 rounded-full bg-blue-500/10 backdrop-blur-sm m-1">DevOps Engineer</span>
+        <span className="inline-block px-2 py-1 rounded-full bg-purple-500/10 backdrop-blur-sm m-1">Full-Stack Developer</span>
+        <span className="inline-block px-2 py-1 rounded-full bg-green-500/10 backdrop-blur-sm m-1">System Architect</span>
       </div>
 
       <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
