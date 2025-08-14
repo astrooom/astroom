@@ -243,6 +243,12 @@ export default function Home() {
           '',
           '─ CURRENT PROJECTS ────────────────────',
           '',
+          '🧵 TweetThreadify',
+          '   Creator & Developer',
+          '   August 2025 - Present',
+          '   AI Twitter Thread Generator - Create Viral X Threads in Seconds',
+          '   https://tweetthreadify.com',
+          '',
           '🚀 UltraServers',
           '   Founding Lead Architect',
           '   July 2022 - Present',
@@ -297,6 +303,12 @@ export default function Home() {
           '═══════════════════════════════════════════════════════',
           '',
           '─ CURRENT PROJECTS ────────────────────────────────────',
+          '',
+          '🧵 TweetThreadify (Creator & Developer)',
+          '   Period: August 2025 - Present',
+          '   Type: Product',
+          '   Purpose: AI Twitter Thread Generator - Create Viral X Threads in Seconds',
+          '   Website: https://tweetthreadify.com',
           '',
           '🚀 UltraServers (Founding Lead Architect)',
           '   Period: July 2022 - Present',
@@ -360,6 +372,12 @@ export default function Home() {
           '═══════════════════════════════════════════════════════════════════════',
           '',
           '┌─ CURRENT PROJECTS ─────────────────────────────────────────────────┐',
+          '│                                                                     │',
+          '│  🧵 TweetThreadify (Creator & Developer)                            │',
+          '│     ├─ Period: August 2025 - Present                                │',
+          '│     ├─ Type: Product                                                │',
+          '│     └─ Purpose: AI Twitter Thread Generator - Create Viral X        │',
+          '│               Threads in Seconds | https://tweetthreadify.com       │',
           '│                                                                     │',
           '│  🚀 UltraServers (Founding Lead Architect)                         │',
           '│     ├─ Period: July 2022 - Present                                 │',
@@ -429,6 +447,12 @@ export default function Home() {
           '╚════════════════════════════════════════════════════════════════════════════════════════╝',
           '',
           '┌─ CURRENT PROJECTS ─────────────────────────────────────────────────────────────────────┐',
+          '│                                                                                        │',
+          '│  🧵 TweetThreadify (Creator & Developer)                                               │',
+          '│     ├─ Period: August 2025 - Present                                                   │',
+          '│     ├─ Type: Product                                                                   │',
+          '│     └─ Purpose: AI Twitter Thread Generator - Create Viral X Threads in Seconds        │',
+          '│        Website: https://tweetthreadify.com                                             │',
           '│                                                                                        │',
           '│  🚀 UltraServers (Founding Lead Architect)                                            │',
           '│     ├─ Period: July 2022 - Present                                                    │',
@@ -651,6 +675,8 @@ export default function Home() {
         output = ['Opening GitHub profile...'];
         window.open('https://github.com/astrooom', '_blank');
         break;
+
+
 
       case 'cat about.txt && cat experience.txt':
         executeCommand('cat about.txt', false);
