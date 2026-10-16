@@ -44,7 +44,7 @@ export type Entry = {
 
 export const experience: Entry[] = [
   {
-    title: "Lead Developer",
+    title: "Founding Lead Architect & Developer",
     org: "ultra.sh",
     url: "https://ultra.sh",
     period: "Launching Autumn 2026",
