@@ -44,6 +44,14 @@ export type Entry = {
 
 export const experience: Entry[] = [
   {
+    title: "Lead Developer",
+    org: "ultra.sh",
+    url: "https://ultra.sh",
+    period: "Launching Autumn 2026",
+    description:
+      "VPS hosting platform offering fast, affordable cloud servers. Currently being built, with public release planned for autumn 2026.",
+  },
+  {
     title: "Technical Operations Manager",
     org: "Dokibird",
     url: "https://www.youtube.com/@Dokibird",
@@ -120,14 +128,6 @@ export const experience: Entry[] = [
 ];
 
 export const projects: Entry[] = [
-  {
-    title: "In development",
-    org: "ultra.sh",
-    url: "https://ultra.sh",
-    period: "Launching Autumn 2026",
-    description:
-      "VPS hosting platform offering fast, affordable cloud servers. Currently being built, with public release planned for autumn 2026.",
-  },
   {
     title: "Creator & Developer",
     org: "TweetThreadify",
