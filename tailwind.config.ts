@@ -10,8 +10,6 @@ const config: Config = {
         fg: "rgb(var(--c-fg) / <alpha-value>)",
         muted: "rgb(var(--c-muted) / <alpha-value>)",
         border: "rgb(var(--c-border) / <alpha-value>)",
-        surface: "rgb(var(--c-surface) / <alpha-value>)",
-        accent: "rgb(var(--c-accent) / <alpha-value>)",
       },
       maxWidth: {
         measure: "42rem",

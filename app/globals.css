@@ -9,8 +9,6 @@
   --c-fg: 23 23 23;
   --c-muted: 107 107 107;
   --c-border: 229 229 226;
-  --c-surface: 245 245 243;
-  --c-accent: 29 78 216;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,36 +18,27 @@
     --c-fg: 229 229 229;
     --c-muted: 150 150 150;
     --c-border: 40 43 50;
-    --c-surface: 23 26 32;
-    --c-accent: 138 180 255;
   }
 }
 
 @layer base {
   html {
-    scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
-
   ::selection {
-    background-color: rgb(var(--c-accent) / 0.25);
+    background-color: rgb(var(--c-fg) / 0.15);
   }
 
   :focus-visible {
-    outline: 2px solid rgb(var(--c-accent));
+    outline: 2px solid rgb(var(--c-fg));
     outline-offset: 2px;
   }
 }
 
 @layer components {
-  /* Inline text link: quiet underline that picks up the accent on hover. */
+  /* Inline text link: plain underline that darkens on hover. */
   .link {
-    @apply underline decoration-border decoration-1 underline-offset-4 transition-colors hover:text-accent hover:decoration-accent;
+    @apply underline decoration-muted/50 decoration-1 underline-offset-4 hover:decoration-fg;
   }
 }

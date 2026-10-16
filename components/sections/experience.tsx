@@ -5,7 +5,7 @@ import { Section } from "@/components/section";
 export function ExperienceSection() {
   return (
     <Section id="experience" title="Experience">
-      <ol className="space-y-12">
+      <ol className="space-y-10">
         {experience.map((entry) => (
           <EntryItem key={`${entry.org}-${entry.title}`} entry={entry} />
         ))}

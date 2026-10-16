@@ -1,9 +1,6 @@
 import type { ReactNode } from "react";
 
-/**
- * A titled page section. The heading is a small mono eyebrow so the
- * content itself carries the visual weight.
- */
+/** A titled page section with a small, quiet heading. */
 export function Section({
   id,
   title,
@@ -14,14 +11,10 @@ export function Section({
   children: ReactNode;
 }) {
   return (
-    <section
-      id={id}
-      aria-labelledby={`${id}-heading`}
-      className="scroll-mt-20 border-t border-border py-12 sm:py-16"
-    >
+    <section id={id} aria-labelledby={`${id}-heading`} className="mt-14">
       <h2
         id={`${id}-heading`}
-        className="mb-8 font-mono text-xs uppercase tracking-[0.2em] text-muted"
+        className="mb-6 text-xs font-medium uppercase tracking-widest text-muted"
       >
         {title}
       </h2>
@@ -30,29 +23,7 @@ export function Section({
   );
 }
 
-/** Two-column row: a narrow mono label on the left, content on the right. */
-export function Row({
-  label,
-  children,
-  align = "start",
-}: {
-  label: ReactNode;
-  children: ReactNode;
-  align?: "start" | "center";
-}) {
-  return (
-    <div
-      className={`grid gap-x-8 gap-y-1 sm:grid-cols-[9rem_1fr] ${
-        align === "center" ? "sm:items-center" : ""
-      }`}
-    >
-      <div className="font-mono text-xs leading-6 text-muted">{label}</div>
-      <div className="min-w-0">{children}</div>
-    </div>
-  );
-}
-
-/** External link with a subtle arrow. */
+/** External link that opens in a new tab. */
 export function ExtLink({
   href,
   children,
@@ -70,9 +41,15 @@ export function ExtLink({
       className={`link ${className}`}
     >
       {children}
-      <span aria-hidden="true" className="ml-0.5 text-muted">
-        ↗
-      </span>
+    </a>
+  );
+}
+
+/** Small text link back to the homepage, used at the top of sub-pages. */
+export function HomeLink() {
+  return (
+    <a href="/" className="text-sm text-muted hover:text-fg">
+      ← astroom
     </a>
   );
 }

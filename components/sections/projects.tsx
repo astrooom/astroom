@@ -5,7 +5,7 @@ import { Section } from "@/components/section";
 export function ProjectsSection() {
   return (
     <Section id="projects" title="Projects">
-      <ol className="space-y-12">
+      <ol className="space-y-10">
         {projects.map((entry) => (
           <EntryItem key={entry.org} entry={entry} />
         ))}
