@@ -3,9 +3,9 @@ import { ExtLink } from "@/components/section";
 
 export function Hero() {
   return (
-    <section id="top">
-      <h1 className="text-2xl font-semibold tracking-tight">{profile.name}</h1>
-      <p className="mt-1 text-muted">
+    <section aria-label="Introduction">
+      <h1 className="text-3xl font-semibold tracking-tight">{profile.name}</h1>
+      <p className="mt-2 text-lg text-muted">
         {profile.title} · {profile.location}
       </p>
       <p className="mt-6 leading-7">{profile.summary[0]}</p>

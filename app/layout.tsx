@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { profile } from "@/content/profile";
+import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import "./globals.css";
 
@@ -140,7 +141,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" id="top">
       <body className="min-h-screen bg-bg font-sans text-fg antialiased">
         <script
           type="application/ld+json"
@@ -152,7 +153,8 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <main id="main" className="mx-auto max-w-measure px-5 pt-16 sm:px-6 sm:pt-24">
+        <SiteHeader />
+        <main id="main" className="mx-auto max-w-measure px-5 pt-12 sm:px-6 sm:pt-16">
           {children}
         </main>
         <SiteFooter />

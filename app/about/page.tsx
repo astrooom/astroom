@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { profile } from "@/content/profile";
-import { HomeLink } from "@/components/section";
+import { PageTitle } from "@/components/section";
 import { AboutBody } from "@/components/sections/about";
 import { ExperienceSection } from "@/components/sections/experience";
 import { SkillsSection } from "@/components/sections/skills";
@@ -16,16 +16,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <HomeLink />
-      <section className="mt-6">
-        <h1 className="text-2xl font-semibold tracking-tight">About</h1>
-        <p className="mt-1 text-muted">
-          {profile.name} · {profile.title}
-        </p>
-        <div className="mt-6">
-          <AboutBody />
-        </div>
-      </section>
+      <PageTitle title="About">
+        {profile.name} · {profile.title}
+      </PageTitle>
+      <div className="mt-8">
+        <AboutBody />
+      </div>
       <ExperienceSection />
       <SkillsSection />
       <EducationSection />

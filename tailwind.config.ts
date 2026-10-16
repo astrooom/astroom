@@ -7,6 +7,7 @@ const config: Config = {
     extend: {
       colors: {
         bg: "rgb(var(--c-bg) / <alpha-value>)",
+        surface: "rgb(var(--c-surface) / <alpha-value>)",
         fg: "rgb(var(--c-fg) / <alpha-value>)",
         muted: "rgb(var(--c-muted) / <alpha-value>)",
         border: "rgb(var(--c-border) / <alpha-value>)",

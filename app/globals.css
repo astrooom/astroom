@@ -6,24 +6,32 @@
 :root {
   color-scheme: light;
   --c-bg: 252 252 251;
+  --c-surface: 244 244 242;
   --c-fg: 23 23 23;
   --c-muted: 107 107 107;
-  --c-border: 229 229 226;
+  --c-border: 225 225 221;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
     --c-bg: 15 17 21;
+    --c-surface: 24 27 33;
     --c-fg: 229 229 229;
     --c-muted: 150 150 150;
-    --c-border: 40 43 50;
+    --c-border: 44 48 56;
   }
 }
 
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 
   ::selection {
