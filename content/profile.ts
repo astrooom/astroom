@@ -48,14 +48,14 @@ export const experience: Entry[] = [
     org: "Dokibird",
     url: "https://www.youtube.com/@Dokibird",
     logo: "/dokibird-logo.jpg",
-    period: "June 2025 – Present",
+    period: "June 2025 – Early 2026",
     description:
-      "Managing end-to-end technical infrastructure and operational efficiency for globally recognized content creator Dokibird (85M+ YouTube views, 200K+ followers on Twitch). Ensuring seamless streaming operations and technical excellence.",
+      "Managed end-to-end technical infrastructure and operational efficiency for globally recognized content creator Dokibird (85M+ YouTube views, 200K+ followers on Twitch). Ensured seamless streaming operations and technical excellence.",
     bullets: [
-      "Managing complete technical infrastructure stack",
-      "Optimizing streaming and content creation workflows",
-      "Ensuring 99.9% uptime for critical streaming operations",
-      "Implementing automation for operational efficiency",
+      "Managed complete technical infrastructure stack",
+      "Optimized streaming and content creation workflows",
+      "Ensured 99.9% uptime for critical streaming operations",
+      "Implemented automation for operational efficiency",
     ],
   },
   {
