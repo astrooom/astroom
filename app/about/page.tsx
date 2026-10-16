@@ -8,7 +8,7 @@ import { ContactSection } from "@/components/sections/contact";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `About ${profile.name} (${profile.alias}), ${profile.title} based in ${profile.location}.`,
+  description: `About ${profile.name}, ${profile.title} based in ${profile.location}.`,
   alternates: { canonical: "/about" },
 };
 

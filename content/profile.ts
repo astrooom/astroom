@@ -3,16 +3,16 @@
  */
 
 export const profile = {
-  name: "Olle Ljung",
+  name: "astroom",
   alias: "astroom",
   title: "System Administrator & Full-Stack Developer",
   location: "Gothenburg, Sweden",
-  email: "olle.ljung@gmail.com",
+  email: "contact@buddleja.co",
   phone: "+46707228827",
   website: "https://astroom.dev",
   github: "https://github.com/astrooom",
-  x: "https://x.com/astrooom",
-  xHandle: "@astrooom",
+  x: "https://x.com/astroomdev",
+  xHandle: "@astroomdev",
   discord: "astroom",
   company: {
     name: "AB Buddleja",

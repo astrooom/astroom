@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/sections/contact";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: `Projects and professional experience of ${profile.name} (${profile.alias}).`,
+  description: `Projects and professional experience of ${profile.name}.`,
   alternates: { canonical: "/projects" },
 };
 

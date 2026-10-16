@@ -1,6 +1,6 @@
 # astroom.dev
 
-Personal site of Olle Ljung (astroom). Next.js 14 (app router) + Tailwind,
+Personal site of astroom. Next.js 14 (app router) + Tailwind,
 exported as static HTML and served from Cloudflare Workers as static assets.
 
 All content lives in `content/profile.ts`; components under `components/`
