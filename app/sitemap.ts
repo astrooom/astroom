@@ -1,14 +1,29 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from "next";
+import { profile } from "@/content/profile";
+
+export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://astroom.dev'
+  const lastModified = new Date("2026-10-16");
 
   return [
     {
-      url: baseUrl,
-      lastModified: new Date('2025-07-03'),
-      changeFrequency: 'monthly',
+      url: profile.website,
+      lastModified,
+      changeFrequency: "monthly",
       priority: 1,
     },
-  ]
-} 
+    {
+      url: `${profile.website}/about`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${profile.website}/projects`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+  ];
+}

@@ -1,14 +1,20 @@
-import type { Metadata } from "next";
-import Script from "next/script";
+import type { Metadata, Viewport } from "next";
+import { profile } from "@/content/profile";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 import "./globals.css";
 
+const siteTitle = `${profile.alias} - ${profile.title}`;
+const siteDescription =
+  "Results-driven System Administrator and Full-Stack Developer with deep experience in building and maintaining scalable, high-performance infrastructure. Based in Gothenburg, Sweden.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://astroom.dev'),
+  metadataBase: new URL(profile.website),
   title: {
-    default: "astroom - System Administrator & Full-Stack Developer",
-    template: "%s | astroom"
+    default: siteTitle,
+    template: `%s | ${profile.alias}`,
   },
-  description: "Results-driven System Administrator and Full-Stack Developer with deep experience in building and maintaining scalable, high-performance infrastructure. Based in Gothenburg, Sweden.",
+  description: siteDescription,
   keywords: [
     "System Administrator",
     "Full-Stack Developer",
@@ -18,70 +24,86 @@ export const metadata: Metadata = {
     "Gothenburg",
     "Sweden",
     "astroom",
-    "Terminal CV",
-    "Interactive Resume"
+    "Olle Ljung",
   ],
-  authors: [{ name: "astroom" }],
-  creator: "astroom",
-  publisher: "astroom",
+  authors: [{ name: profile.name, url: profile.website }],
+  creator: profile.alias,
+  publisher: profile.alias,
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://astroom.dev',
-    title: 'astroom - System Administrator & Full-Stack Developer',
-    description: 'Interactive terminal-style CV showcasing expertise in system administration, full-stack development, and infrastructure management.',
-    siteName: 'astroom Portfolio',
+    type: "website",
+    locale: "en_US",
+    url: profile.website,
+    title: siteTitle,
+    description: siteDescription,
+    siteName: profile.alias,
     images: [
       {
-        url: '/astroom_planet.png',
-        width: 1200,
-        height: 630,
-        alt: 'astroom - System Administrator & Developer',
-        type: 'image/png',
-      }
+        url: "/astroom_planet.png",
+        width: 959,
+        height: 702,
+        alt: `${profile.alias} - ${profile.title}`,
+        type: "image/png",
+      },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'astroom - System Administrator & Full-Stack Developer',
-    description: 'Interactive terminal-style CV showcasing expertise in system administration and development.',
-    images: ['/astroom_planet.png'],
-    creator: '@astrooom',
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/astroom_planet.png"],
+    creator: profile.xHandle,
   },
   alternates: {
-    canonical: 'https://astroom.dev',
+    canonical: "/",
   },
-  other: {
-    'theme-color': '#1a1a1a',
-    'color-scheme': 'dark',
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/astroom_small.png", type: "image/png" },
+    ],
+    apple: "/astroom_small.png",
   },
+  manifest: "/manifest.json",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fcfcfb" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f1115" },
+  ],
 };
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "astroom",
-  "jobTitle": "System Administrator & Full-Stack Developer",
-  "url": "https://astroom.dev",
-  "image": "https://astroom.dev/astroom_planet.png",
-  "description": "Results-driven System Administrator and Full-Stack Developer with deep experience in building and maintaining scalable, high-performance infrastructure.",
-  "address": {
+  name: profile.name,
+  alternateName: profile.alias,
+  jobTitle: profile.title,
+  url: profile.website,
+  image: `${profile.website}/astroom_planet.png`,
+  email: profile.email,
+  telephone: profile.phone,
+  description: siteDescription,
+  address: {
     "@type": "PostalAddress",
-    "addressLocality": "Gothenburg",
-    "addressCountry": "Sweden"
+    addressLocality: "Gothenburg",
+    addressCountry: "Sweden",
   },
-  "knowsAbout": [
+  knowsAbout: [
     "System Administration",
     "Full-Stack Development",
     "DevOps Engineering",
@@ -89,23 +111,20 @@ const structuredData = {
     "Server Management",
     "Web Development",
     "Database Administration",
-    "Network Security"
+    "Network Security",
   ],
-  "sameAs": [
-    "https://github.com/astrooom",
-    "https://x.com/astrooom"
-  ],
-  "worksFor": [
+  sameAs: [profile.github, profile.x],
+  worksFor: [
     {
       "@type": "Organization",
-      "name": "UltraServers",
-      "url": "https://ultraservers.com"
+      name: "UltraServers",
+      url: "https://ultraservers.com",
     },
     {
       "@type": "Organization",
-      "name": "AB Buddleja"
-    }
-  ]
+      name: "AB Buddleja",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -115,26 +134,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/astroom_small.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/astroom_small.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#1a1a1a" />
-        <meta name="color-scheme" content="dark" />
-      </head>
-      <body>
-        <Script
-          id="structured-data"
+      <body className="min-h-screen bg-bg font-sans text-fg antialiased">
+        <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <main className="min-h-screen">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-bg focus:px-3 focus:py-2 focus:ring-2 focus:ring-accent"
+        >
+          Skip to content
+        </a>
+        <SiteHeader />
+        <main id="main" className="mx-auto max-w-measure px-5 sm:px-6">
           {children}
         </main>
+        <SiteFooter />
       </body>
     </html>
   );
